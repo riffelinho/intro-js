@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banco Dev</title>
+    <link rel="stylesheet" href="javascript.css">
+</head>
+
+<body>
+
+    <div class="inicio">
+        <form action="" class="forma">
+            <h1>acceso de usuario</h1>
+            <label for="" class="orden"> usuario</label>
+            <input type="text" name="u" id="" class="frt">
+            <label for="" class="orden">password</label>
+            <input type="password" name="c" id="" class="rft">
+            <input type="button" value="ingresar" onclick="login(this.form)" class="ingresar">
+        </form>
+    </div>
+    <script>
+        function login(form) {
+
+            if (form.u.value == "Maui") {
+                if (form.c.value == "1411") {
+                    location = "prin.html";
+
+                } else {
+                    alert("error de password");
+                }
+            } else {
+                alert("error de usuario")
+            }
+        }
+    </script>
+</body>
+
+</html>
